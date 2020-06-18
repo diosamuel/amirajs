@@ -86,7 +86,7 @@ You can set elements attribute by using setAttribute function.
 #### Remove Elements Attribute
 You can remove elements attribute by using removeAttribute function.
 ```js
-    amira.setAttribute("<specify-attribute-here>","<specify-value-here>");
+    amira.removeAttribute("<specify-attribute-here>");
 ```
 
 #### Show and Hide Elements
