@@ -104,6 +104,10 @@ You can also use default prototype function by using list object.
 ```js
     let amira = new Amira("<specify-attribute-here>").list;
 ```
+or
+```js
+    let amiraProto = amira.list;
+```
 
 ## Contributing
 You can create new pull requests <a href="https://github.com/fauzan121002/amirajs/pulls">here</a>
