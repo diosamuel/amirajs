@@ -102,7 +102,7 @@ or
 #### Use default prototype function
 You can also use default prototype function by using list object.
 ```js
-    let amira = new Amira("<specify-attribute-here>").list;
+    let amira = new Amira("<specify-dom-here>").list;
 ```
 or
 ```js
