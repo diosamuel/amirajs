@@ -52,7 +52,7 @@ You can import the script inside the body tag.
 </head>
 <body>
 
-    <script src="https://rawcdn.githack.com/fauzan121002/amirajs/6f4f1e5d57f189afaebf3631c8d48586248f0e6f/amira.js"></script>
+    <script src="https://gitcdn.xyz/repo/fauzan121002/amirajs/master/amira.min.js"></script>
 </body>
 </html>
 ```
