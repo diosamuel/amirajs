@@ -32,75 +32,65 @@
 ## Usage
 You can see the example usage of the amira javascript dom simplifier <a href="https://github.com/fauzan121002/amirajs/blob/master/examples/index.html">here</a>
 
-### How to use
-You can import the script inside the body tag.
+### Setup
+You can import the external script inside the `<body>{here}</body>` tag.
 ```html
- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>amirajs</title>
-</head>
-<body>
-
-    <script src="https://gitcdn.xyz/repo/fauzan121002/amirajs/master/amira.min.js"></script>
-</body>
-</html>
+<!-- imported script -->
+<script src="https://gitcdn.xyz/repo/fauzan121002/amirajs/master/amira.min.js"></script>
 ```
 
-### Functions
+NB: Remember to use the amira APIs below the imported script.
 
-#### Init DOM
-You must init your dom to constructor before use amira prototype function.
+### APIs
+
+* [insert](#insert)
+* [empty](#empty)
+* [setAttr](#setAttr)
+* [removeAttr](#removeAttr)
+* [show](#show)
+* [hide](#hide)
+
+#### insert
+You can insert both value or text in single function.
 ```js
-    let amira = new Amira("<specify-dom-here>");
+$(".amira").insert("Hello World");
 ```
 
-#### Insert Value or HTML
-You can insert both value or html in single function.
+#### empty
+You can empty both value or text in single function.
 ```js
-    amira.insertValue("Hello World");
+$(".amira").empty();
 ```
 
-#### Empty Value or HTML
-You can empty both value or html in single function.
+#### setAttr
+You can set elements attribute by using `setAttr` function.
 ```js
-    amira.emptyValue();
+$(".amira").setAttr("id","11");
 ```
 
-#### Set Elements Attribute
-You can set elements attribute by using setAttribute function.
+Also supports fluent design
+
 ```js
-    amira.setAttribute("<specify-attribute-here>","<specify-value-here>");
+$(".amira").setAttr("id","11").setAttr('style','color: red;');
 ```
 
-#### Remove Elements Attribute
-You can remove elements attribute by using removeAttribute function.
+#### removeAttr
+You can remove elements attribute by using `removeAttr` function.
 ```js
-    amira.removeAttribute("<specify-attribute-here>");
+$(".amira").removeAttr("id");
 ```
 
-#### Show and Hide Elements
-You can show and hide elements by using show and hide function.
+#### show
+You can show elements by using `show` function.
 ```js
-    amira.show();
-```
-or
-```js
-    amira.hide();
+$(".amira").show();
 ```
 
-#### Use default prototype function
-You can also use default prototype function by using list object.
+#### hide
+You can hide elements by using `hide` function.
 ```js
-    let amira = new Amira("<specify-dom-here>").list;
+$(".amira").hide();
 ```
-or
-```js
-    let amiraProto = amira.list;
-```
-
 ## Contributing
 You can create new pull requests <a href="https://github.com/fauzan121002/amirajs/pulls">here</a>
 
