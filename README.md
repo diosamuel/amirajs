@@ -40,7 +40,7 @@ You can import the external script inside the `<body>{here}</body>` tag.
 
 ```html
 <!-- imported script -->
-<script src="https://unpkg.com/amirajs@1.0.1/amira.min.js"></script>
+<script src="https://unpkg.com/amirajs@1.0.2/amira.min.js"></script>
 ```
 
 NB: Remember to use the amira APIs below the imported script.
