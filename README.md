@@ -30,7 +30,7 @@
 * [License](#license)
 
 ## Usage
-You can see the example usage of the amira javascript dom simplifier <a href="https://github.com/fauzan121002/amirajs/blob/master/examples/index.html">here</a>
+You can see the example usage <a href="https://github.com/fauzan121002/amirajs/blob/master/examples/index.html">here</a>
 
 ### Setup
 You can import the external script inside the `<body>{here}</body>` tag.
