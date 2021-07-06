@@ -1,10 +1,11 @@
 /*! AmiraJS | (c) Muhammad Fauzan | github.com/fauzan121002/amirajs/license.md */ 
-window.$ = function(selector){
-    return {
-        elements: (function() {
-            return typeof selector === "object" ? selector : 
+function build(){
+    var amira = function(selector) {
+        this.elements = typeof selector === "object" ? selector : 
             Array.prototype.slice.call(document.querySelectorAll(selector));
-        })(),
+    }
+
+    amira.prototype = {
         insert: function(s) {
             this.elements.forEach(t => {
                 void 0 !== t.innerHTML && (t.innerHTML = s), (t.value = s);
@@ -18,14 +19,15 @@ window.$ = function(selector){
             return this;
         },
         setAttr: function(a,s) {
+            console.log(this.elements);
             this.elements.forEach(t => {
-                t.setAttr(a, s);
+                t.setAttribute(a, s);
             });
             return this;
         },
         removeAttr: function(a) {
             this.elements.forEach(t => {
-                t.removeAttr(a);
+                t.removeAttribute(a);
             });
             return this;
         },
@@ -42,4 +44,16 @@ window.$ = function(selector){
             return this;
         }
     }
+
+    return function (selector) {
+        return new amira(selector);
+    };
+};
+
+if (typeof exports === 'object' && typeof module !== 'undefined') {
+    module.exports = build();
+} else if (typeof define === 'function' && define.amd) {
+    define(build);
+} else {
+    window.$ = build();
 }
