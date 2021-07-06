@@ -1,6 +1,4 @@
-<p align="center"> 
- <img align="center" src="logo/brand.png">
-</p>
+![amirajs](https://socialify.git.ci/fauzan121002/amirajs/image?font=Raleway&language=1&owner=1&pattern=Diagonal%20Stripes&stargazers=1&theme=Dark)
 
  # Amirajs is Lightweight JS Library for DOM Manipulation
 
@@ -14,19 +12,13 @@
  <a href="https://github.com/fauzan121002/amirajs">
   <img src="https://img.shields.io/github/forks/fauzan121002/amirajs?style=flat-square" alt="MIT License">
  </a>
-</p>
 
-<p align="center">
  <a href="https://github.com/fauzan121002/amirajs/issues">
   <img src="https://img.shields.io/github/issues/fauzan121002/amirajs?style=flat-square" alt="Open Collective">
  </a>
 
  <a href="https://github.com/fauzan121002/amirajs">
   <img src="https://img.shields.io/github/stars/fauzan121002/amirajs?style=flat-square" alt="Open Collective">
- </a>
-
- <a href="https://github.com/fauzan121002/amirajs">
-  <img src="http://hits.dwyl.com/fauzan121002/https://github.com/fauzan121002/amirajs.svg" alt="Open Collective">
  </a>
 </p>
 
