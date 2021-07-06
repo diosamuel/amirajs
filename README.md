@@ -32,7 +32,7 @@
 
 ## Usage
 
-You can see the example usage <a href="https://unpkg.com/amirajs@1.0.1/amira.min.js">here</a>
+You can see the example usage <a href="https://github.com/fauzan121002/amirajs/blob/master/examples/index.html">here</a>
 
 ### Setup
 
@@ -40,7 +40,7 @@ You can import the external script inside the `<body>{here}</body>` tag.
 
 ```html
 <!-- imported script -->
-<script src="https://gitcdn.xyz/repo/fauzan121002/amirajs/master/amira.min.js"></script>
+<script src="https://unpkg.com/amirajs@1.0.1/amira.min.js"></script>
 ```
 
 NB: Remember to use the amira APIs below the imported script.
