@@ -2,7 +2,8 @@
 window.$ = function(selector){
     return {
         elements: (function() {
-            return Array.prototype.slice.call(document.querySelectorAll(selector));
+            return typeof selector === "object" ? selector : 
+            Array.prototype.slice.call(document.querySelectorAll(selector));
         })(),
         insert: function(s) {
             this.elements.forEach(t => {
