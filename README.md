@@ -30,7 +30,7 @@
 * [License](#license)
 
 ## Usage
-You can see the example usage <a href="https://github.com/fauzan121002/amirajs/blob/master/examples/index.html">here</a>
+You can see the example usage <a href="https://unpkg.com/amirajs@1.0.1/amira.min.js">here</a>
 
 ### Setup
 You can import the external script inside the `<body>{here}</body>` tag.
