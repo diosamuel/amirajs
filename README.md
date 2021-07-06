@@ -2,7 +2,7 @@
  <img align="center" src="logo/brand.png">
 </p>
 
- # Amira.js is A Javascript Plugin for JS Dom Simplifier
+ # Amirajs is Lightweight JS Library for DOM Manipulation
 
 --------------------------------------------
 
