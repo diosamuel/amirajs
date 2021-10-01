@@ -6,21 +6,47 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="amira">
-        amira
-    </div>
-    <div class="amira">
-        amira
-    </div>
-    <input type="text" class="amira">
-    <textarea class="amira" name="" id="" cols="30" rows="10"></textarea>
-    <img class="amira" src="" alt="">
-    <object data="" type="" class="amira"></object>
-    <script src="https://unpkg.com/amirajs@1.0.2/amira.min.js"> </script>
+    <h1 class="amira-header">Amira</h1>
+    <input type="text" class="amira" value="Amira">
+    <br>
+    <textarea class="amira" name="" id="" cols="30" rows="10">Amira</textarea>
+    <br>
+    <button onclick="insertAmira()">Insert</button>
+    <button onclick="insertAllAmira()">Insert All</button>
+    <button onclick="emptyAmira()">Empty</button>
+    <button onclick="hideAmira()">Hide</button>
+    <button onclick="showAmira()">Show</button>
+    <button onclick="setAttrAmira()">Set Attribute</button>
+    <button onclick="delAttrAmira()">Remove Attribute</button>
+    <!--<script src="https://unpkg.com/amirajs@1.0.2/amira.min.js"> </script>-->
     <!-- for development -->
-    <!-- <script src="../amira.min.js"></script> -->
+    <!--<script src="../amira.js"></script>-->
+    <script src="../amira.min.js"></script>
     <script>
-        $(document.querySelectorAll(".amira")).insert("Hello");
+
+    function insertAmira(){
+        $('.amira-header').insert("Hello Amira");
+    }
+    function insertAllAmira(){
+        $('.amira-header').insert("Hello Amira");
+        $('.amira').insert("Hello Amira");
+    }
+    function emptyAmira(){
+        $(".amira").empty();
+        $('.amira-header').empty();
+    }
+    function hideAmira(){
+        $(document.querySelectorAll(".amira")).hide();
+    }
+    function showAmira(){
+        $(document.querySelectorAll(".amira")).show();
+    }
+    function setAttrAmira(){
+        $(document.querySelectorAll(".amira")).setAttr('style', 'border:1px solid yellow');
+    }
+    function delAttrAmira(){
+        $(document.querySelectorAll(".amira")).removeAttr('style');
+    }
     </script>
 </body>
 </html>
