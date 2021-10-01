@@ -5,6 +5,10 @@ function build() {
       typeof selector === "object"
         ? selector
         : Array.prototype.slice.call(document.querySelectorAll(selector));
+
+        if(!this.elements.length){
+          throw new Error(`Couldn't find '${selector}' element!`)
+        }
   };
 
   amira.prototype = {
